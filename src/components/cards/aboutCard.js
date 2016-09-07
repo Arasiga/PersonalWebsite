@@ -16,10 +16,10 @@ export default class AboutCardContainer extends Component {
       <Element name="Insights">
         <Card style={{textAlign: 'left', width: '90%', margin: 'auto'}}>
           <Row style={{padding: '20px'}}>
-            <Col lg={4} md={4} sm={12} xs={12}>
+            <Col lg={3} md={3} sm={12} xs={12}>
               <img src='../../../images/pictures/alex.jpg' className='alex-img' />
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            <Col lg={9} md={9} sm={12} xs={12}>
               <h1> Insights </h1>
               <p>
                 Hello, my name is Alexandru Rasiga and I am an aspiring web developper and candidate for Computer Engineering at University of Waterloo as well as a Lighthouse Labs Web Dev Bootcamp graduate. 

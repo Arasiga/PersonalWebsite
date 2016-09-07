@@ -61,7 +61,7 @@ export default class Projects extends Component {
             />
             <hr className='hr-style' />
             <Media 
-              icon={<img src='../../images/ProjectScreenshots/ROOT.png' className='project-img' />}
+              icon={<img src='../../images/ProjectScreenshots/mindset.png' className='project-img' />}
               title='Mindset.io'
               skills={['../../images/progIcons/nodejs-original-wordmark.svg', '../../images/progIcons/react-original.svg', '../../images/progIcons/bootstrap-plain-wordmark.svg', '../../images/progIcons/javascript-original.svg']}
               description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
@@ -69,11 +69,19 @@ export default class Projects extends Component {
             />
             <hr className='hr-style' />
             <Media 
+              icon={<img src='../../images/ProjectScreenshots/pipspass.png' className='project-img' />}
+              title='PipsPass'
+              skills={['../../images/progIcons/nodejs-original-wordmark.svg', '../../images/progIcons/react-original.svg', '../../images/progIcons/bootstrap-plain-wordmark.svg', '../../images/progIcons/javascript-original.svg']}
+              description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              textFirst={true}
+            />
+            <hr className='hr-style' />
+            <Media 
               icon={<img src='../../images/ProjectScreenshots/ROOT.png' className='project-img' />}
               title='Personal Website'
               skills={['../../images/progIcons/nodejs-original-wordmark.svg', '../../images/progIcons/react-original.svg', '../../images/progIcons/bootstrap-plain-wordmark.svg']}
               description='This is the website you are looking at right now that I build from scratch using react and css.'
-              textFirst={true}
+              textFirst={ this.props.size === 'xs' ? true : false}
             />
             <hr className='hr-style' />
           </div>

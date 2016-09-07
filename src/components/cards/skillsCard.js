@@ -14,19 +14,19 @@ const imgSrc = '../../../images/progIcons/';
 
 const skills = {
   firstRow: [ 
-    {img: `${imgSrc}css3-original.svg`, title: 'CSS3 Styling', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '}, 
-    {img: `${imgSrc}git-original.svg`, title: 'Git Source Control', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '}, 
-    {img: `${imgSrc}html5-original.svg`, title: 'HTML5 Markup', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '} 
+    {img: `${imgSrc}css3-original.svg`, title: 'CSS3 Styling'}, 
+    {img: `${imgSrc}git-original.svg`, title: 'Git Source Control'}, 
+    {img: `${imgSrc}html5-original.svg`, title: 'HTML5 Markup'} 
   ],
   secondRow: [ 
-    {img: `${imgSrc}javascript-original.svg`, title: 'Everything Javascript', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '}, 
-    {img: `${imgSrc}nodejs-original-wordmark.svg`, title: 'My Favorite Framework', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '}, 
-    {img: `${imgSrc}postgresql-plain-wordmark.svg`, title: 'Postgres Database', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '} 
+    {img: `${imgSrc}javascript-original.svg`, title: 'Everything Javascript'}, 
+    {img: `${imgSrc}nodejs-original-wordmark.svg`, title: 'My Favorite Framework'}, 
+    {img: `${imgSrc}postgresql-plain-wordmark.svg`, title: 'Postgres Database'} 
   ],
   thirdRow: [ 
-    {img: `${imgSrc}rails-original-wordmark.svg`, title: 'Rails Backend', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '}, 
-    {img: `${imgSrc}react-original.svg`, title: 'React/Redux - My Happy Place', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '}, 
-    {img: `${imgSrc}ruby-original.svg`, title: 'Ruby', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, '} 
+    {img: `${imgSrc}rails-original-wordmark.svg`, title: 'Rails Backend'}, 
+    {img: `${imgSrc}react-original.svg`, title: 'React/Redux'}, 
+    {img: `${imgSrc}ruby-original.svg`, title: 'Ruby'} 
   ]
 }
 
@@ -55,7 +55,7 @@ export default class SkillsCardContainer extends Component {
   render(){
     return(
       <Element name="Skills">
-        <Card style={{textAlign: 'left', width: '90%', margin: 'auto'}}>
+        <Card style={{textAlign: 'left', width: '90%', margin: 'auto', marginBottom: '40px'}}>
           <CardHeader
             title="Alex Rasiga"
             subtitle="Skills"

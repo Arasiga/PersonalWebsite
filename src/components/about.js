@@ -40,9 +40,9 @@ export default class About extends Component {
     return (
       <Element name="About">
         <section name="About" className='about-div'>
-          <h1> About me </h1>
+          <h1 style={{fontFamily: "Comic Sans MS", letterSpacing: '2px', fontWeight: 'lighter'}}> About me </h1>
           <hr className='hr-style' />
-          <p>
+          <p style={{fontFamily: "Comic Sans MS"}}>
             <a onClick={() => { this._scrollToInsights() }}>Insights</a> / 
             <a onClick={() => { this._scrollToInterests() }}> Interests </a> / 
             <a onClick={() => { this._scrollToSkills() }}> Skills </a> 
@@ -55,7 +55,7 @@ export default class About extends Component {
             </Col>
           </Row>
           <hr className='hr-style' />
-          <h5> - Interests - </h5>
+          <h2 style={{fontFamily: "Comic Sans MS", letterSpacing: '2px', fontWeight: 'lighter'}}> Interests </h2>
           <hr className='hr-style' />
           <Row>
             <Col lg={12} md={12} sm={12} xs={12}>
@@ -63,7 +63,7 @@ export default class About extends Component {
             </Col>
           </Row>
           <hr className='hr-style' />
-          <h5> - Skills - </h5>
+          <h2 style={{fontFamily: "Comic Sans MS", letterSpacing: '2px', fontWeight: 'lighter'}}> Skills </h2>
           <hr className='hr-style' />
           <Row>
             <Col lg={12} md={12} sm={12} xs={12}>

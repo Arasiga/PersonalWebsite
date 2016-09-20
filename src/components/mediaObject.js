@@ -19,8 +19,8 @@ export default class Media extends Component {
         <div className='project-text-container'>
           { 
             this.props.link ? 
-            <a href={this.props.link} target="_blank" style={{color: 'black'}} ><h3 style={{cursor: 'pointer'}}> {title} </h3></a> :
-            <h3> {title} </h3> 
+            <a href={this.props.link} target="_blank" style={{color: 'black'}} ><h3 style={{cursor: 'pointer', fontFamily: "Comic Sans MS"}}> {title} </h3></a> :
+            <h3 style={{fontFamily: "Comic Sans MS", fontWeight: 'lighter'}}> {title} </h3> 
           }
           <p> {description} </p>
           {

@@ -14,7 +14,7 @@ export default class Projects extends Component {
       <section className='project-div'>
         <Element name="Projects">
           <div name="Projects" style={{padding: '20px', width: '80%', margin: 'auto'}}>
-            <h1 className='section-title' > My Projects </h1>
+            <h1 className='section-title' style={{fontFamily: "Comic Sans MS", letterSpacing: '2px', fontWeight: 'lighter'}}> My Projects </h1>
             <hr className='hr-style' style={{marginBottom: '40px'}}/>
             <Media 
               icon={<img src='../../images/ProjectScreenshots/Betting.png' className='project-img' />}

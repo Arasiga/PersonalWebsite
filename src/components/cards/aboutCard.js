@@ -20,7 +20,7 @@ export default class AboutCardContainer extends Component {
               <img src='../../../images/pictures/alex.jpg' className='alex-img' />
             </Col>
             <Col lg={9} md={9} sm={12} xs={12}>
-              <h1> Insights </h1>
+              <h3 style={{fontFamily: "Comic Sans MS", letterSpacing: '1px', fontWeight: 'lighter'}}> Insights </h3>
               <p>
                 Hello, my name is Alexandru Rasiga and I am an aspiring web developper and candidate for Computer Engineering at University of Waterloo as well as a Lighthouse Labs Web Dev Bootcamp graduate. 
               </p>

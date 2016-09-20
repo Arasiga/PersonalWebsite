@@ -5,6 +5,23 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import { Col, Row } from 'react-bootstrap';  
 import Paper from 'material-ui/Paper';
 
+const styleLeft = {
+  marginLeft: "5%",
+  marginBottom: '35px', 
+  width: "70%", 
+  textAlign: 'left'
+}
+
+const styleRight = {
+  marginRight: "5%",
+  float: "right",
+  marginBottom: '35px', 
+  width: "70%", 
+  textAlign: 'left'
+}
+
+
+
 export default class Inner extends Component {
 
   constructor(props) {
@@ -20,9 +37,18 @@ export default class Inner extends Component {
 
   render(){
     return(
-      <Card style={{marginBottom: '35px'}} expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card 
+        style={
+          this.props.num === 1 ?
+          styleLeft : 
+          styleRight 
+        } 
+        expanded={this.state.expanded} 
+        onExpandChange={this.handleExpandChange}
+      >
         <CardHeader
           title={this.props.title}
+          titleStyle={{fontFamily: "Comic Sans MS", letterSpacing: '1px', fontWeight: 'lighter'}}
           subtitle={this.props.subtitle}
           avatar={<img src={this.props.icon} height='44px' width='44px' />}
           actAsExpander={true}

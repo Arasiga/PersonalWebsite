@@ -58,38 +58,36 @@ export default class InterestsCardContainer extends Component {
   render(){
     return(
       <Element name="Interests">
-        <Card style={{textAlign: 'left', width: '90%', margin: 'auto'}}>
-          <CardHeader
-            title="Alex Rasiga"
-            subtitle="Interests"
-          />
-          <CardText>
-            <Inner 
-              data={sports} 
-              icon='../../../images/icons/cup.svg' 
-              title='Sports' 
-              subtitle={ this.props.size === 'xs' ? '' : 'Sports are a big part of my life and they are what I believe to be the essence to my success'}
-            />
-            <Inner 
-              data={computers} 
-              icon='../../../images/icons/laptop.svg' 
-              title='Computers' 
-              subtitle={ this.props.size === 'xs' ? '' : 'I strive to learn more and more on this topic everyday'}
-            />
-            <Inner 
-              data={travelling} 
-              icon='../../../images/icons/luggage.svg' 
-              title='Travelling' 
-              subtitle={ this.props.size === 'xs' ? '' : 'Exploration is a never ending process in my life. I love to discover new places on Earth.'}
-            />
-            <Inner 
-              data={music} 
-              icon='../../../images/icons/compact-disc.svg' 
-              title='Music' 
-              subtitle={ this.props.size === 'xs' ? '' : "Music is a great interest of mine."}
-            />
-          </CardText>
-        </Card>
+        <Inner 
+          num={1}
+          data={sports} 
+          icon='../../../images/icons/cup.svg' 
+          title='Sports' 
+          subtitle={ this.props.size === 'xs' ? '' : 'Sports are a big part of my life and they are what I believe to be the essence to my success'}
+        />
+        <div style={{overflow: 'hidden'}}>
+        <Inner 
+          num={2}
+          data={computers} 
+          icon='../../../images/icons/laptop.svg' 
+          title='Computers' 
+          subtitle={ this.props.size === 'xs' ? '' : 'I strive to learn more and more on this topic everyday'}
+        />
+        </div>
+        <Inner 
+          num={1}
+          data={travelling} 
+          icon='../../../images/icons/luggage.svg' 
+          title='Travelling' 
+          subtitle={ this.props.size === 'xs' ? '' : 'Exploration is a never ending process in my life. I love to discover new places on Earth.'}
+        />
+        <Inner 
+          num={2}
+          data={music} 
+          icon='../../../images/icons/compact-disc.svg' 
+          title='Music' 
+          subtitle={ this.props.size === 'xs' ? '' : "Music is a great interest of mine."}
+        />
       </Element>
     );
   }

@@ -38,7 +38,7 @@ export default class Main extends Component {
       <div className='main-image'>
         <Row style={{height: '100%'}}>
           <Col lg={5} md={5} sm={5} style={{height: '100%'}}>
-            <div className='main-title-container'>
+            <div className='main-title-container' style={{fontFamily: "Comic Sans MS"}}>
               <h1> Alex Rasiga </h1>
               <hr className='hr-style' style={{background: 'white'}}/>
               <p> 

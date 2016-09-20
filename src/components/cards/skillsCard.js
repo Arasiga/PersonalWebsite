@@ -40,8 +40,7 @@ export default class SkillsCardContainer extends Component {
             return(
               <Col lg={4} md={4} sm={4} xs={12} key={index} style={{marginBottom: '20px'}}>
                 <div className='skillContainer'> 
-                  <img src={skill.img} height='80px' width='100%' />
-                  <h5 style={{marginTop: '10px'}}> {skill.title} </h5>
+                  <img src={skill.img} height='100px' width='100%' />
                 </div>
               </Col>
             );
@@ -55,18 +54,9 @@ export default class SkillsCardContainer extends Component {
   render(){
     return(
       <Element name="Skills">
-        <Card style={{textAlign: 'left', width: '90%', margin: 'auto', marginBottom: '40px'}}>
-          <CardHeader
-            title="Alex Rasiga"
-            subtitle="Skills"
-          />
-
-          <CardText>
-            {this._renderSkills(skills.firstRow)}
-            {this._renderSkills(skills.secondRow)}
-            {this._renderSkills(skills.thirdRow)}
-          </CardText>
-        </Card>
+        {this._renderSkills(skills.firstRow)}
+        {this._renderSkills(skills.secondRow)}
+        {this._renderSkills(skills.thirdRow)}
       </Element>
     );
   }

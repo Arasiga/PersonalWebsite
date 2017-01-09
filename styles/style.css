@@ -1,32 +1,15 @@
-.main-image {
-  height: 100vh;
-  background: url(/images/image1.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 15px;
-}
-
+/*
 section {
   position: relative;
   z-index: 1;
-  /*padding: 1em;*/
-}
+}*/
 
-section:before {
+/*section:before {
   position: absolute;
   content:'';
-}
+}*/
 
-section.about-div {
-  background: #fffff0;
-  text-align: center;
-  padding: 15px;
-  padding-bottom: 70px;
-}
-
-.project-div:before {
+/*.project-div:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   -webkit-transform-origin: 3% 0;
@@ -37,14 +20,14 @@ section.about-div {
   width: 150%;
   height: 75%;
   background: inherit;
-}
+}*/
 
-section.project-div {
+/*section.project-div {
   background: #fffff0;
   padding-bottom: 70px;
-}
+}*/
 
-.contact-div:before {
+/*.contact-div:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   -webkit-transform-origin: 3% 0;
@@ -55,13 +38,13 @@ section.project-div {
   width: 150%;
   height: 75%;
   background: inherit;
-}
+}*/
 
-section.contact-div {
+/*section.contact-div {
   background: #fffff0;
-}
+}*/
 
-.icon-seperator:before {
+/*.icon-seperator:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   -webkit-transform-origin: 3% 0;
@@ -72,9 +55,9 @@ section.contact-div {
   width: 150%;
   height: 75%;
   background: inherit;
-}
+}*/
 
-section.icon-seperator {
+/*section.icon-seperator {
   background: #2ECC71;
   height: 200px;
 }
@@ -86,25 +69,17 @@ section.icon-seperator {
 
 .hr-style {
   width: 40px;
-  border-top-width: 4px; 
+  border-top-width: 4px;
 }
 
 .section-title {
   text-align: center;
 }
 
-.main-title-container {
-  vertical-align: middle;
-  margin: auto;
-  margin-top: calc(100vh - 60vh);
-  text-align: center;
-  color: white;
-}
-
 .project-img {
   display: block;
-  margin: auto; 
-  height: 200px; 
+  margin: auto;
+  height: 200px;
   width: 220px;
   border-radius: 25px;
 }
@@ -133,7 +108,7 @@ section.icon-seperator {
 
 .alex-img {
   display: block;
-  margin: auto; 
+  margin: auto;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -153,9 +128,9 @@ section.icon-seperator {
 
 .project-text-container {
   text-align: center;
-}
+}*/
 
-.rotate-pic {
+/*.rotate-pic {
   height: 150px;
   width: 150px;
   border-radius: 200px;
@@ -165,10 +140,9 @@ section.icon-seperator {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   border-radius: 10px;
-}
+}*/
 
-div.skillContainer {
+/*div.skillContainer {
   margin-bottom: 15px;
   text-align: center;
-}
-
+}*/

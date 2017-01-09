@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Media from './mediaObject';
 // components
 import { Col, Row } from 'react-bootstrap';
+import ProjectList from './Projects/projectList';
 
 import Scroll from 'react-scroll';
 
@@ -13,10 +14,11 @@ export default class Projects extends Component {
     return (
       <section className='project-div'>
         <Element name="Projects">
-          <div name="Projects" style={{padding: '20px', width: '80%', margin: 'auto'}}>
-            <h1 className='section-title' style={{fontFamily: "Comic Sans MS", letterSpacing: '2px', fontWeight: 'lighter'}}> My Projects </h1>
+          <ProjectList />
+          {/* <div name="Projects" style={{padding: '20px', width: '80%', margin: 'auto'}}>
+            <h1 className='section-title' style={{letterSpacing: '2px', fontWeight: 'lighter'}}> My Projects </h1>
             <hr className='hr-style' style={{marginBottom: '40px'}}/>
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/Betting.png' className='project-img' />}
               title='Simple Betting Game'
               link='https://github.com/Arasiga/Betting_Game'
@@ -25,7 +27,7 @@ export default class Projects extends Component {
               textFirst={true}
             />
             <hr className='hr-style' />
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/Contact.png' className='project-img' />}
               title='Contact List'
               link='https://github.com/Arasiga/Contact_List_Web_App'
@@ -34,7 +36,7 @@ export default class Projects extends Component {
               textFirst={ this.props.size === 'xs' ? true : false}
             />
             <hr className='hr-style' />
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/RubyPad.png' className='project-img' />}
               title='RubyPad'
               link='https://github.com/Arasiga/RubyPad'
@@ -43,7 +45,7 @@ export default class Projects extends Component {
               textFirst={true}
             />
             <hr className='hr-style' />
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/CodeMeeting.png' className='project-img' />}
               title='Code-Meeting'
               link='https://github.com/hjsu/Code-Meeting'
@@ -52,7 +54,7 @@ export default class Projects extends Component {
               textFirst={ this.props.size === 'xs' ? true : false}
             />
             <hr className='hr-style' />
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/ROOT.png' className='project-img' />}
               title='ROOT'
               skills={['../../images/progIcons/nodejs-original-wordmark.svg', '../../images/progIcons/react-original.svg', '../../images/progIcons/bootstrap-plain-wordmark.svg', '../../images/progIcons/javascript-original.svg']}
@@ -60,7 +62,7 @@ export default class Projects extends Component {
               textFirst={true}
             />
             <hr className='hr-style' />
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/mindset.png' className='project-img' />}
               title='Mindset.io'
               skills={['../../images/progIcons/nodejs-original-wordmark.svg', '../../images/progIcons/react-original.svg', '../../images/progIcons/bootstrap-plain-wordmark.svg', '../../images/progIcons/javascript-original.svg']}
@@ -68,7 +70,7 @@ export default class Projects extends Component {
               textFirst={ this.props.size === 'xs' ? true : false}
             />
             <hr className='hr-style' />
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/pipspass.png' className='project-img' />}
               title='PipsPass'
               skills={['../../images/progIcons/nodejs-original-wordmark.svg', '../../images/progIcons/react-original.svg', '../../images/progIcons/bootstrap-plain-wordmark.svg', '../../images/progIcons/material-ui-logo.svg', '../../images/progIcons/sequelize-logo.svg']}
@@ -76,7 +78,7 @@ export default class Projects extends Component {
               textFirst={true}
             />
             <hr className='hr-style' />
-            <Media 
+            <Media
               icon={<img src='../../images/ProjectScreenshots/ROOT.png' className='project-img' />}
               title='Personal Website'
               skills={['../../images/progIcons/nodejs-original-wordmark.svg', '../../images/progIcons/react-original.svg', '../../images/progIcons/bootstrap-plain-wordmark.svg']}
@@ -84,16 +86,9 @@ export default class Projects extends Component {
               textFirst={ this.props.size === 'xs' ? true : false}
             />
             <hr className='hr-style' />
-          </div>
+          </div> */}
         </Element>
       </section>
     );
   }
 }
-
-
-
-
-
-
-

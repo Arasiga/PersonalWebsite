@@ -10,9 +10,9 @@ import reducers from './reducers';
 
 import Main from './components/main';
 import About from './components/about';
+import Skills from './components/skills';
 import Contact from './components/contact';
 import Projects from './components/projects';
-import Icon from './components/icon_seperator';
 import MainAppBar from './components/mainAppBar';
 
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -52,9 +52,8 @@ class App extends Component {
           <MainAppBar />
           <Main />
           <About size={this.state.size}/>
-          <Icon />
+          <Skills />
           <Projects size={this.state.size}/>
-          <Icon />
           <Contact />
         </div>
       </MuiThemeProvider>
@@ -64,6 +63,6 @@ class App extends Component {
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App /> 
+    <App />
   </Provider>
   , document.getElementById('app'));

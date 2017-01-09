@@ -1,0 +1,21 @@
+.main {
+  height: 100vh;
+  // background: url(/images/test.svg) no-repeat center center;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // background-size: cover;
+  background-color: #87D37C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-image{
+  width: 70%;
+  height: 80%;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}

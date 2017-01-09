@@ -2,21 +2,21 @@ import React, { Component } from 'react';
 
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
-import { Col, Row } from 'react-bootstrap';  
+import { Col, Row } from 'react-bootstrap';
 import Paper from 'material-ui/Paper';
 
 const styleLeft = {
   marginLeft: "5%",
-  marginBottom: '35px', 
-  width: "70%", 
+  marginBottom: '35px',
+  width: "70%",
   textAlign: 'left'
 }
 
 const styleRight = {
   marginRight: "5%",
   float: "right",
-  marginBottom: '35px', 
-  width: "70%", 
+  marginBottom: '35px',
+  width: "70%",
   textAlign: 'left'
 }
 
@@ -37,18 +37,18 @@ export default class Inner extends Component {
 
   render(){
     return(
-      <Card 
+      <Card
         style={
           this.props.num === 1 ?
-          styleLeft : 
-          styleRight 
-        } 
-        expanded={this.state.expanded} 
+          styleLeft :
+          styleRight
+        }
+        expanded={this.state.expanded}
         onExpandChange={this.handleExpandChange}
       >
         <CardHeader
           title={this.props.title}
-          titleStyle={{fontFamily: "Comic Sans MS", letterSpacing: '1px', fontWeight: 'lighter'}}
+          titleStyle={{letterSpacing: '1px', fontWeight: 'lighter'}}
           subtitle={this.props.subtitle}
           avatar={<img src={this.props.icon} height='44px' width='44px' />}
           actAsExpander={true}

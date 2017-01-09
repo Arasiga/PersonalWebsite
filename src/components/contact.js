@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
-
+import contact from '../../styles/sass/contact.scss';
 import { newMessage } from '../reducers/formReducer.js'
-// components 
+// components
 import { Row, Col } from 'react-bootstrap';
 import { TextField, RaisedButton, Snackbar } from 'material-ui';
 
@@ -47,11 +47,11 @@ class Contact extends Component {
           onRequestClose={this.handleRequestClose.bind(this)}
         />
         <Element name="Contact">
-          <Row style={{padding: '18px'}}>
+          {/* <Row className="form">
             <Col lg={4} md={4} smHidden={true}>
 
             </Col>
-            <Col lg={7} md={7} sm={12}>
+            <Col lg={7} md={7} sm={12}> */}
               <h3> Contact Me! </h3>
               <a href='https://github.com/Arasiga' target="_blank">
                 <img style={{margin: '10px', cursor: 'pointer'}} src="../../images/progIcons/github-logo.svg" height='20px' width='20px' />
@@ -88,8 +88,8 @@ class Contact extends Component {
                   type='submit'
                 />
               </form>
-            </Col>
-          </Row>
+            {/* </Col>
+          </Row> */}
         </Element>
       </section>
     );
@@ -111,11 +111,3 @@ export default reduxForm({
   fields: ['name', 'email', 'message'],
   validate
 }, null, { newMessage })(Contact);
-
-
-
-
-
-
-
-

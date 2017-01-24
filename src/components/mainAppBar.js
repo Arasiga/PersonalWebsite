@@ -16,6 +16,14 @@ const scroller = Scroll.scroller;
 
 export default class MainAppBar extends Component {
 
+  _scrollToTop() {
+    scroller.scrollTo("Top", {
+      duration: 1200,
+      delay: 100,
+      smooth: true
+    });
+  }
+
    _scrollToContact() {
     scroller.scrollTo("Contact", {
       duration: 1200,
@@ -67,7 +75,13 @@ export default class MainAppBar extends Component {
           <p className="object" onClick={ () => {this._scrollToSkills()}}> Skills </p>
         </Col>
         <Col className="link" lg={2} md={2} sm={2} xs={2}>
-          <img src="/images/AR-icon.svg" height="100%" width="100%"/>
+          <img
+            className="icon"
+            onClick={ () => {this._scrollToTop()}}
+            src="/images/AR-icon.svg"
+            height="100%"
+            width="100%"
+          />
         </Col>
         <Col className="link" lg={2} md={2} sm={2} xs={2}>
           <p className="object" onClick={ () => {this._scrollToProjects()}}> Projects </p>

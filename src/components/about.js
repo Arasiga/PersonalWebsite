@@ -44,8 +44,8 @@ export default class About extends Component {
     return (
       <Element name="About">
         <section name="About">
-          <Insights />
-          <Interests />
+          <Insights color={this.props.color} />
+          <Interests color={this.props.color} />
           {/* <h1 style={{letterSpacing: '2px', fontWeight: 'lighter'}}> About me </h1>
           <hr className='hr-style' />
           <p>

@@ -20,6 +20,26 @@ class Contact extends Component {
     };
   }
 
+  _handleHexColor = () => {
+    let hexColor;
+
+    switch(this.props.color) {
+      case 'red':
+        hexColor = "#E43F3F";
+        break;
+      case 'green':
+        hexColor = "#03C9A9";
+        break;
+      case 'blue':
+        hexColor = "#19B5FE";
+        break;
+      default:
+        hexColor = "#03C9A9";
+    }
+
+    return hexColor;
+  }
+
   handleRequestClose() {
     this.setState({
       open: false,
@@ -39,7 +59,7 @@ class Contact extends Component {
     const {handleSubmit, fields: {name, email, message}} = this.props;
 
     return (
-      <section className='contact-div'>
+      <section className='contact-div'style={{backgroundColor: this._handleHexColor()}}>
         <Snackbar
           open={this.state.open}
           message="Email Sent!"

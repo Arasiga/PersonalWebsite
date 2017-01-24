@@ -8,6 +8,11 @@ import promise from 'redux-promise';
 
 import reducers from './reducers';
 
+import IconMenu from 'material-ui/IconMenu';
+import MenuItem from 'material-ui/MenuItem';
+import IconButton from 'material-ui/IconButton';
+import ColorLens from 'material-ui/svg-icons/image/color-lens';
+
 import Main from './components/main';
 import About from './components/about';
 import Skills from './components/skills';
@@ -30,7 +35,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      size: calcWidth(window.innerWidth)
+      size: calcWidth(window.innerWidth),
+      color: ""
     }
   }
 
@@ -41,6 +47,13 @@ class App extends Component {
     })
   }
 
+  _handleColorChange = (colorToChange) => {
+    const color = colorToChange;
+    this.setState({
+      color: colorToChange
+    });
+  }
+
   componentDidMount = () => {
     window.addEventListener('resize', this._handleResize);
   }
@@ -48,13 +61,35 @@ class App extends Component {
   render(){
     return(
       <MuiThemeProvider muiTheme={getMuiTheme()}>
-        <div>
+        <div style={{overflowX: "hidden"}}>
           <MainAppBar />
-          <Main />
-          <About size={this.state.size}/>
-          <Skills />
-          <Projects size={this.state.size}/>
-          <Contact />
+          {/* <div>
+            <div onClick={ () => { this._handleColorChange("red"); }}>
+              red
+            </div>
+            <div onClick={ () => { this._handleColorChange("green"); }}>
+              green
+            </div>
+            <div onClick={ () => { this._handleColorChange("blue"); }}>
+              blue
+            </div>
+          </div> */}
+          <IconMenu
+            iconButtonElement={<IconButton style={{margin: "5px"}}><ColorLens color={"white"}/></IconButton>}
+            anchorOrigin={{horizontal: 'left', vertical: 'top'}}
+            targetOrigin={{horizontal: 'left', vertical: 'top'}}
+            style={{position: "fixed", zIndex: "1000"}}
+          >
+            <MenuItem onClick={ () => { this._handleColorChange("red"); }} style={{zIndex: "100000"}} primaryText="Red" />
+            <MenuItem onClick={ () => { this._handleColorChange("green"); }} style={{zIndex: "100000"}} primaryText="Green" />
+            <MenuItem onClick={ () => { this._handleColorChange("blue"); }} style={{zIndex: "100000"}} primaryText="Blue" />
+          </IconMenu>
+
+          <Main color={this.state.color} />
+          <About size={this.state.size} color={this.state.color}/>
+          <Skills color={this.state.color} />
+          <Projects size={this.state.size} color={this.state.color}/>
+          <Contact color={this.state.color}/>
         </div>
       </MuiThemeProvider>
     );

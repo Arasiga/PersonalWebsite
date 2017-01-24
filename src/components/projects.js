@@ -10,11 +10,12 @@ const Element = Scroll.Element;
 const scroller = Scroll.scroller;
 
 export default class Projects extends Component {
+
   render() {
     return (
       <section className='project-div'>
         <Element name="Projects">
-          <ProjectList />
+          <ProjectList color={this.props.color}/>
           {/* <div name="Projects" style={{padding: '20px', width: '80%', margin: 'auto'}}>
             <h1 className='section-title' style={{letterSpacing: '2px', fontWeight: 'lighter'}}> My Projects </h1>
             <hr className='hr-style' style={{marginBottom: '40px'}}/>

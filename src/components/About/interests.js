@@ -11,7 +11,7 @@ export default class Interests extends Component {
     super(props);
     this.state={
       open: false,
-      info: []
+      info: {}
     }
   }
 
@@ -49,8 +49,23 @@ export default class Interests extends Component {
     return hexColor;
   }
 
-  _setInfo = () => {
-    let info = [];
+  _setInfo = (type) => {
+    let info = {};
+
+    switch(type){
+      case 'Technology':
+        break;
+      case 'Sports':
+        break;
+      case 'Travelling':
+        info.title = "Travelling";
+        info.text = "I love travelling";
+        break;
+    }
+
+    this.setState({
+      info: info
+    });
 
   }
 

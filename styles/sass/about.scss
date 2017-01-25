@@ -1,10 +1,58 @@
 .insights {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 25px;
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
+}
+
+.insights-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.insights-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalTitleContainer {
+  padding-right: 0px;
+  padding-left: 0px;
+  height: 500px;
+}
+
+.modalTitle {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.modal-info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.modal-info-card-image {
+
 }
 
 .interests {
@@ -60,10 +108,26 @@
 }
 
 .skills {
-  height: 100vh;
+  min-height: 100vh;
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
+}
+
+.skills-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.skills-showcase {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

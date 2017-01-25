@@ -34,9 +34,38 @@ export default class Skills extends Component {
     return (
       <Element name="Skills">
         <section name="Skills">
-          <div className="skills" style={{backgroundColor: this._handleHexColor()}}>
+          <Row className="skills" style={{backgroundColor: this._handleHexColor()}}>
             {/* This is where I will have Interests */}
-          </div>
+            <Col lg={6} md={6} sm={12} xs={12} className="skills-description">
+              <div style={{width: "80%"}}>
+                <h1> Skills. </h1>
+                <br />
+                <p>
+                  TEST TEST TEST
+                  TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+                  TEST TEST TEST
+                  TEST TEST TEST
+                  TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TEST
+                  TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+                  TEST TEST TEST
+                </p>
+              </div>
+            </Col>
+            <Col lg={6} md={6} sm={12} xs={12} className="skills-showcase">
+              <div style={{width: "80%"}}>
+
+              </div>
+            </Col>
+          </Row>
         </section>
       </Element>
     );

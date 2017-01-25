@@ -4,17 +4,22 @@ import { Col, Row } from 'react-bootstrap';
 
 import Dialog from 'material-ui/Dialog';
 
+const customContentStyle = {
+  width: '80%',
+  maxWidth: 'none'
+}
+
 export default class ProjectModal extends Component {
 
   render(){
     return (
       <Dialog
-        title="Dialog With Custom Width"
-        // actions={actions}
         onRequestClose={() => {this.props.hide() }}
-        // contentStyle={customContentStyle}
+        contentStyle={customContentStyle}
         open={this.props.open}
-        style={{zIndex: "100000", overflowX: "hidden"}}
+        style={{zIndex: "100000"}}
+        bodyStyle={{padding: "none", backgroundColor: "#BFBFBF", overflowX: "hidden"}}
+        autoScrollBodyContent
       >
         This dialog spans the entire width of the screen.
       </Dialog>

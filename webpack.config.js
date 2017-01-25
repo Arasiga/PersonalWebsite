@@ -5,6 +5,10 @@ module.exports = {
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     './src/app.js'
   ],
+  sripts: {
+    "build": "./node_modules/webpack/bin/webpack.js -p",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --inline"
+  },
   output: {
     path: __dirname,
     publicPath: '/',

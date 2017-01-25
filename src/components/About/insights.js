@@ -27,9 +27,38 @@ export default class Insights extends Component {
 
   render () {
     return (
-      <div className="insights" style={{backgroundColor: this._handleHexColor()}}>
+      <Row className="insights" style={{backgroundColor: this._handleHexColor()}}>
         {/* This is where I will have the information about myself */}
-      </div>
+        <Col lg={6} md={6} sm={12} xs={12} className="insights-image">
+          <div style={{width: "80%"}}>
+
+          </div>
+        </Col>
+        <Col lg={6} md={6} sm={12} xs={12} className="insights-text">
+          <div style={{width: "80%"}}>
+            <h1> Alexandru Rasiga. </h1>
+            <br />
+            <p>
+              TEST TEST TEST
+              TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+              TEST TEST TEST
+              TEST TEST TEST
+              TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TEST
+              TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+              TEST TEST TEST
+            </p>
+          </div>
+        </Col>
+      </Row>
     );
   }
 }

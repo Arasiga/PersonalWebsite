@@ -79,7 +79,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("Contact-List") }}
           >
-            Contact List
+            <h1 style={{color: "#ECECEC"}}> Contact List. </h1>
           </Col>
           <Col
             className="project"
@@ -87,7 +87,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("CodePad") }}
           >
-            CodePad
+            <h1 style={{color: "#ECECEC"}}> CodePad. </h1>
           </Col>
           <Col
             className="project"
@@ -95,7 +95,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("Personal-Website") }}
           >
-            Personal Website
+            <h1 style={{color: "#ECECEC"}}> Personal Website. </h1>
           </Col>
         </Row>
         <Row className="project-row">
@@ -105,7 +105,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("ROOT-Education") }}
           >
-            ROOT Education
+            <h1 style={{color: "#ECECEC"}}> ROOT Education. </h1>
           </Col>
           <Col
             className="project"
@@ -113,7 +113,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("MindsetLabs.io") }}
           >
-            MindsetLabs.io
+            <h1 style={{color: "#ECECEC"}}> MindsetLabs.io </h1>
           </Col>
           <Col
             className="project"
@@ -121,7 +121,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("PipsPass") }}
           >
-            PipsPass
+            <h1 style={{color: "#ECECEC"}}> PipsPass. </h1>
           </Col>
         </Row>
       </div>

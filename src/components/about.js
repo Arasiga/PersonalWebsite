@@ -46,37 +46,6 @@ export default class About extends Component {
         <section name="About">
           <Insights color={this.props.color} />
           <Interests color={this.props.color} />
-          {/* <h1 style={{letterSpacing: '2px', fontWeight: 'lighter'}}> About me </h1>
-          <hr className='hr-style' />
-          <p>
-            <a onClick={() => { this._scrollToInsights() }}>Insights</a> /
-            <a onClick={() => { this._scrollToInterests() }}> Interests </a> /
-            <a onClick={() => { this._scrollToSkills() }}> Skills </a>
-          </p>
-
-          <Row style={{backgroundColor: "#16A085"}}>
-            <Col lg={12} md={12} sm={12} xs={12}>
-              <AboutCardContainer
-              />
-            </Col>
-          </Row>
-          <hr className='hr-style' />
-          <h2 style={{letterSpacing: '2px', fontWeight: 'lighter'}}> Interests </h2>
-          <hr className='hr-style' />
-          <Row>
-            <Col lg={12} md={12} sm={12} xs={12}>
-              <InterestsCardContainer size={this.props.size}/>
-            </Col>
-          </Row>
-          <hr className='hr-style' />
-          <h2 style={{letterSpacing: '2px', fontWeight: 'lighter'}}> Skills </h2>
-          <hr className='hr-style' />
-          <Row>
-            <Col lg={12} md={12} sm={12} xs={12}>
-              <SkillsCardContainer size={this.props.size}/>
-            </Col>
-          </Row>
-          <hr className='hr-style' /> */}
         </section>
       </Element>
     );

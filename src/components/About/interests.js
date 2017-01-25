@@ -11,7 +11,11 @@ export default class Interests extends Component {
     super(props);
     this.state={
       open: false,
-      info: {}
+      info: {
+        title: "",
+        image: "",
+        text: []
+      }
     }
   }
 
@@ -54,12 +58,58 @@ export default class Interests extends Component {
 
     switch(type){
       case 'Technology':
+        info.title = "Technology.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/technology.jpg";
+        info.text = [
+          {
+            image: "",
+            description: ""
+          },
+          {
+            image: "",
+            description: ""
+          },
+          {
+            image: "",
+            description: ""
+          }
+        ];
         break;
       case 'Sports':
+        info.title = "Sports.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/sports.jpg";
+        info.text = [
+          {
+            image: "",
+            description: ""
+          },
+          {
+            image: "",
+            description: ""
+          },
+          {
+            image: "",
+            description: ""
+          }
+        ];
         break;
       case 'Travelling':
-        info.title = "Travelling";
-        info.text = "I love travelling";
+        info.title = "Travelling.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/travelling.jpg";
+        info.text = [
+          {
+            image: "",
+            description: ""
+          },
+          {
+            image: "",
+            description: ""
+          },
+          {
+            image: "",
+            description: ""
+          }
+        ];
         break;
     }
 
@@ -76,14 +126,13 @@ export default class Interests extends Component {
     return (
       <Row className="interests">
         <InterestsModal info={this.state.info} open={this.state.open} hide={this._handleModal}/>
-        {/* This is where I will have Interests */}
         <Col
           className="interest"
           style={{backgroundColor: color[0]}}
           lg={4} md={4} sm={12} xs={12}
           onClick={ () => {this._handleModal(); this._setInfo("Technology")} }
         >
-          Technology
+          <h1 style={{color: "#ECECEC"}}> Technology. </h1>
         </Col>
         <Col
           className="interest"
@@ -91,7 +140,7 @@ export default class Interests extends Component {
           lg={4} md={4} sm={12} xs={12}
           onClick={ () => {this._handleModal(); this._setInfo("Sports")} }
         >
-          Sports
+          <h1 style={{color: "#ECECEC"}}> Sports. </h1>
         </Col>
         <Col
           className="interest"
@@ -99,7 +148,7 @@ export default class Interests extends Component {
           lg={4} md={4} sm={12} xs={12}
           onClick={ () => {this._handleModal(); this._setInfo("Travelling")} }
         >
-          Travelling
+          <h1 style={{color: "#ECECEC"}}> Travelling. </h1>
         </Col>
       </Row>
     );

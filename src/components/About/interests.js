@@ -14,7 +14,8 @@ export default class Interests extends Component {
       info: {
         title: "",
         image: "",
-        text: []
+        text: "",
+        gallery: []
       }
     }
   }
@@ -60,55 +61,31 @@ export default class Interests extends Component {
       case 'Technology':
         info.title = "Technology.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/technology.jpg";
-        info.text = [
-          {
-            image: "",
-            description: ""
-          },
-          {
-            image: "",
-            description: ""
-          },
-          {
-            image: "",
-            description: ""
-          }
+        info.text = "";
+        info.gallery = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/andy-mountains.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/trophies.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/soccer.jpg",
         ];
         break;
       case 'Sports':
         info.title = "Sports.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/sports.jpg";
-        info.text = [
-          {
-            image: "",
-            description: ""
-          },
-          {
-            image: "",
-            description: ""
-          },
-          {
-            image: "",
-            description: ""
-          }
+        info.text = "";
+        info.gallery = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/andy-mountains.jpg",
+          "",
+          "",
         ];
         break;
       case 'Travelling':
         info.title = "Travelling.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/travelling.jpg";
-        info.text = [
-          {
-            image: "",
-            description: ""
-          },
-          {
-            image: "",
-            description: ""
-          },
-          {
-            image: "",
-            description: ""
-          }
+        info.text = "";
+        info.gallery = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/andy-mountains.jpg",
+          "",
+          "",
         ];
         break;
     }

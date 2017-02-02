@@ -10,7 +10,12 @@ export default class ProjectList extends Component {
     super(props);
     this.state={
       open: false,
-      info: []
+      info: {
+        title: "",
+        image: "",
+        description: "",
+        gallery: []
+      }
     }
   }
 
@@ -60,10 +65,63 @@ export default class ProjectList extends Component {
     return hexColor;
   }
 
-  _setProject = () => {
+  _setProject = (type) => {
     let info = [];
 
+    switch(type){
+      case 'Contact-List':
+        info.title = "Contact List.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/Contact.png";
+        info.description = "";
+        info.gallery = [
 
+        ];
+        break;
+      case 'CodeMeeting':
+        info.title = "CodeMeeting.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/CodeMeeting.png";
+        info.description = "";
+        info.gallery = [
+
+        ];
+        break;
+      case 'Personal-Website':
+        info.title = "Personal Website.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/personalWebsite.png";
+        info.description = "";
+        info.gallery = [
+
+        ];
+        break;
+      case 'ROOT-Education':
+        info.title = "ROOT-Education.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/ROOT.png";
+        info.description = "";
+        info.gallery = [
+
+        ];
+        break;
+      case 'MindsetLabs.io':
+        info.title = "MindsetLabs.io.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindset.png";
+        info.description = "";
+        info.gallery = [
+
+        ];
+        break;
+      case 'PipsPass':
+        info.title = "PipsPass.";
+        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/pipspass.png";
+        info.description = "";
+        info.gallery = [
+
+        ];
+        break;
+    }
+
+    this.setState({
+      info: info
+    });
   }
 
   render () {
@@ -71,7 +129,7 @@ export default class ProjectList extends Component {
 
     return (
       <div>
-        <ProjectModal open={this.state.open} hide={this._handleModal}/>
+        <ProjectModal open={this.state.open} hide={this._handleModal} info={this.state.info}/>
         <Row className="project-row">
           <Col
             className="project"
@@ -79,15 +137,15 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("Contact-List") }}
           >
-            <h1 style={{color: "#ECECEC"}}> Contact List. </h1>
+            <h2 style={{color: "#ECECEC"}}> Contact List. </h2>
           </Col>
           <Col
             className="project"
             style={{backgroundColor: colors[1]}}
             lg={4} md={4} sm={12} xs={12}
-            onClick={ () => { this._handleModal(); this._setProject("CodePad") }}
+            onClick={ () => { this._handleModal(); this._setProject("CodeMeeting") }}
           >
-            <h1 style={{color: "#ECECEC"}}> CodePad. </h1>
+            <h2 style={{color: "#ECECEC"}}> CodeMeeting. </h2>
           </Col>
           <Col
             className="project"
@@ -95,7 +153,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("Personal-Website") }}
           >
-            <h1 style={{color: "#ECECEC"}}> Personal Website. </h1>
+            <h2 style={{color: "#ECECEC"}}> Personal Website. </h2>
           </Col>
         </Row>
         <Row className="project-row">
@@ -105,7 +163,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("ROOT-Education") }}
           >
-            <h1 style={{color: "#ECECEC"}}> ROOT Education. </h1>
+            <h2 style={{color: "#ECECEC"}}> ROOT Education. </h2>
           </Col>
           <Col
             className="project"
@@ -113,7 +171,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("MindsetLabs.io") }}
           >
-            <h1 style={{color: "#ECECEC"}}> MindsetLabs.io </h1>
+            <h2 style={{color: "#ECECEC"}}> MindsetLabs.io </h2>
           </Col>
           <Col
             className="project"
@@ -121,7 +179,7 @@ export default class ProjectList extends Component {
             lg={4} md={4} sm={12} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("PipsPass") }}
           >
-            <h1 style={{color: "#ECECEC"}}> PipsPass. </h1>
+            <h2 style={{color: "#ECECEC"}}> PipsPass. </h2>
           </Col>
         </Row>
       </div>

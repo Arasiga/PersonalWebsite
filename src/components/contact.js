@@ -74,10 +74,10 @@ class Contact extends Component {
             <Col lg={7} md={7} sm={12}> */}
               <h3> Contact Me! </h3>
               <a href='https://github.com/Arasiga' target="_blank">
-                <img style={{margin: '10px', cursor: 'pointer'}} src="../../images/progIcons/github-logo.svg" height='20px' width='20px' />
+                <img style={{margin: '10px', cursor: 'pointer'}} src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/github-logo.svg" height='20px' width='20px' />
               </a>
               <a href='https://ca.linkedin.com/in/alex-rasiga-b3b599119' target="_blank">
-                <img style={{cursor: 'pointer'}} src="../../images/progIcons/linkedin-logo.svg" height='20px' width='20px' />
+                <img style={{cursor: 'pointer'}} src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/linkedin-logo.svg" height='20px' width='20px' />
               </a>
               <p> This information will be sent to my email  </p>
               <form onSubmit={handleSubmit(this._handleFormSubmit.bind(this))}>

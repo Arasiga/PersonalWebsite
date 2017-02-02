@@ -66,30 +66,32 @@ export default class MainAppBar extends Component {
       //   <MenuItem primaryText="My Projects" onTouchTap={ () => {this._scrollToProjects()}} />
       //   <MenuItem primaryText="Contact Me" onTouchTap={ () => {this._scrollToContact()}} />
       // </IconMenu>
-      <Row className="header">
-        <Col className="link" lg={1} md={1} sm={1} xs={1}></Col>
-        <Col className="link" lg={2} md={2} sm={2} xs={2}>
-          <p className="object" onClick={ () => {this._scrollToAbout()}}> About </p>
-        </Col>
-        <Col className="link" lg={2} md={2} sm={2} xs={2}>
-          <p className="object" onClick={ () => {this._scrollToSkills()}}> Skills </p>
-        </Col>
-        <Col className="link" lg={2} md={2} sm={2} xs={2}>
-          <img
-            className="icon"
-            onClick={ () => {this._scrollToTop()}}
-            src="/images/AR-icon.svg"
-            height="100%"
-            width="100%"
-          />
-        </Col>
-        <Col className="link" lg={2} md={2} sm={2} xs={2}>
-          <p className="object" onClick={ () => {this._scrollToProjects()}}> Projects </p>
-        </Col>
-        <Col className="link" lg={2} md={2} sm={2} xs={2}>
-          <p className="object" onClick={ () => {this._scrollToContact()}}> Contact </p>
-        </Col>
-      </Row>
+      <div>
+        <Row className="header">
+          <Col className="link" lg={1} md={1} sm={1} xs={1}></Col>
+          <Col className="link" lg={2} md={2} sm={2} xs={2}>
+            <p className="object" onClick={ () => {this._scrollToAbout()}}> About </p>
+          </Col>
+          <Col className="link" lg={2} md={2} sm={2} xs={2}>
+            <p className="object" onClick={ () => {this._scrollToSkills()}}> Skills </p>
+          </Col>
+          <Col className="link" lg={2} md={2} sm={2} xs={2}>
+            <img
+              className="icon"
+              onClick={ () => {this._scrollToTop()}}
+              src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/AR-icon.svg"
+              height="100%"
+              width="100%"
+            />
+          </Col>
+          <Col className="link" lg={2} md={2} sm={2} xs={2}>
+            <p className="object" onClick={ () => {this._scrollToProjects()}}> Projects </p>
+          </Col>
+          <Col className="link" lg={2} md={2} sm={2} xs={2}>
+            <p className="object" onClick={ () => {this._scrollToContact()}}> Contact </p>
+          </Col>
+        </Row>
+      </div>
     );
   }
 }

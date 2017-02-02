@@ -33,7 +33,7 @@ export default class Main extends Component {
       <section>
         <Element name="Top">
           <div className='main' style={{backgroundColor: this._handleHexColor()}}>
-            <img src="/images/test.svg" className="svg-image" />
+            <img src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/test.svg" className="svg-image" />
             <h1 style={{color: "white"}}> Welcome. </h1>
           </div>
         </Element>

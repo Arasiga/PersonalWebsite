@@ -8,7 +8,8 @@ import Dialog from 'material-ui/Dialog';
 
 const customContentStyle = {
   width: '80%',
-  maxWidth: 'none'
+  maxWidth: 'none',
+  height: "100vh"
 }
 
 export default class InterestsModal extends Component {
@@ -17,7 +18,7 @@ export default class InterestsModal extends Component {
     return (
       <Col lg={12} md={12} sm={12} className="modalTitleContainer">
         <IconButton
-          style={{float: 'right', position: "absolute", zIndex: "1000"}}
+          style={{float: 'right', position: "fixed", zIndex: "1000"}}
           onTouchTap={ () => {this.props.hide()}}
         >
           <CloseIcon style={{fill: '#fff'}}/>
@@ -32,19 +33,24 @@ export default class InterestsModal extends Component {
     )
   }
 
-  _renderCard = (data) => {
+  _renderText = () => {
     return (
-      <Row>
+      <div className="modal-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    )
+  }
+
+  _renderGallery = () => {
+    return (
+      <Row style={{padding: "25px"}}>
         {
-          data.map( (item, key) => {
-            return(
-              <Col lg={4} md={4} sm={6} xs={12} className="modal-info-card">
-                <img src={item.image} className="modal-info-card-image"/>
-                <p>
-                  {item.description}
-                </p>
+          this.props.info.gallery.map( (img, index) => {
+            return (
+              <Col lg={4} md={4} sm={6} xs={6}>
+                <img src={img} height="100%" width="100%"/>
               </Col>
-            );
+            )
           })
         }
       </Row>
@@ -52,6 +58,7 @@ export default class InterestsModal extends Component {
   }
 
   render(){
+    console.log(this.props.info);
     return (
       <Dialog
         onRequestClose={() => {this.props.hide() }}
@@ -60,9 +67,15 @@ export default class InterestsModal extends Component {
         style={{zIndex: "100000"}}
         bodyStyle={{padding: "none", backgroundColor: "#BFBFBF", overflowX: "hidden"}}
         autoScrollBodyContent
+        // autoDetectWindowHeight
       >
         {this._renderTitle()}
-        {this._renderCard(this.props.info.text)}
+        <div className="center">
+          {this._renderText()}
+          <h2 style={{margin: "auto"}}> Gallery. </h2>
+          <hr className='seperator' />
+        </div>
+        {this._renderGallery()}
       </Dialog>
     )
   }

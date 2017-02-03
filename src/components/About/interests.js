@@ -63,9 +63,9 @@ export default class Interests extends Component {
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/technology.jpg";
         info.text = "";
         info.gallery = [
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/andy-mountains.jpg",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/trophies.jpg",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/soccer.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/googleCampus.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/Programming.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/computer.jpg"
         ];
         break;
       case 'Sports':
@@ -73,9 +73,12 @@ export default class Interests extends Component {
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/sports.jpg";
         info.text = "";
         info.gallery = [
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/andy-mountains.jpg",
-          "",
-          "",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/soccer.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/varsity_soccer.jpeg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/soccer-goal.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/trophies.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/soccer2.JPG",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/scuba-diving.jpg"
         ];
         break;
       case 'Travelling':
@@ -83,9 +86,13 @@ export default class Interests extends Component {
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/travelling.jpg";
         info.text = "";
         info.gallery = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/scuba.JPG",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/andy-mountains.jpg",
-          "",
-          "",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/chicago.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/sanDiego1.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/colorado.jpg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/romania.JPG",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/pictures/santa-monica.jpg"
         ];
         break;
     }

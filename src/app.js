@@ -78,7 +78,7 @@ class App extends Component {
             iconButtonElement={<IconButton style={{margin: "5px"}}><ColorLens color={"white"}/></IconButton>}
             anchorOrigin={{horizontal: 'left', vertical: 'top'}}
             targetOrigin={{horizontal: 'left', vertical: 'top'}}
-            style={{position: "fixed", zIndex: "1000"}}
+            style={{position: "fixed", zIndex: "1000", right: "0px"}}
           >
             <MenuItem onClick={ () => { this._handleColorChange("red"); }} style={{zIndex: "100000"}} primaryText="Red" />
             <MenuItem onClick={ () => { this._handleColorChange("green"); }} style={{zIndex: "100000"}} primaryText="Green" />

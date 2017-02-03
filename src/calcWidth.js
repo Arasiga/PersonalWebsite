@@ -1,9 +1,11 @@
 export function calcWidth(width) {
-  if (width < '780'){
+
+  if (width < 700){
     return 'xs';
-  } else if (width < '1000'){
+  } else if (width < 1000){
     return 'sm';
   } else {
     return 'lg';
   }
+
 }

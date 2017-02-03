@@ -64,7 +64,7 @@ export default class Skills extends Component {
                   item.map( (icon, index) => {
                     return (
                       <Col lg="4" md="4" sm="4" xs="4" className="icon-container">
-                        <img src={icon} height="70%" width="70%"/>
+                        <img src={icon} />
                       </Col>
                     )
                   })

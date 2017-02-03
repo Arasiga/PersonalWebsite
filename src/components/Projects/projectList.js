@@ -13,6 +13,7 @@ export default class ProjectList extends Component {
       info: {
         title: "",
         image: "",
+        technologies: [],
         description: "",
         gallery: []
       }
@@ -72,6 +73,15 @@ export default class ProjectList extends Component {
       case 'Contact-List':
         info.title = "Contact List.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/Contact.png";
+        info.technologies = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/heroku-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/jquery-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/ruby-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/logo.png"
+        ];
         info.description = "";
         info.gallery = [
 
@@ -80,14 +90,34 @@ export default class ProjectList extends Component {
       case 'CodeMeeting':
         info.title = "CodeMeeting.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/CodeMeeting.png";
+        info.technologies = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/webRTC.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/javascript-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/postgresql-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg"
+        ];
         info.description = "";
         info.gallery = [
-
+          
         ];
         break;
       case 'Personal-Website':
         info.title = "Personal Website.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/personalWebsite.png";
+        info.technologies = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/javascript-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/illustrator-plain.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/aws.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/material-ui-logo.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg"
+        ];
         info.description = "";
         info.gallery = [
 
@@ -96,6 +126,15 @@ export default class ProjectList extends Component {
       case 'ROOT-Education':
         info.title = "ROOT-Education.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/ROOT.png";
+        info.technologies = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/material-ui-logo.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/sequelize-logo.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
+        ];
         info.description = "";
         info.gallery = [
 
@@ -104,6 +143,16 @@ export default class ProjectList extends Component {
       case 'MindsetLabs.io':
         info.title = "MindsetLabs.io.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindset.png";
+        info.technologies = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/javascript-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/material-ui-logo.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
+        ];
         info.description = "";
         info.gallery = [
 
@@ -112,6 +161,18 @@ export default class ProjectList extends Component {
       case 'PipsPass':
         info.title = "PipsPass.";
         info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/pipspass.png";
+        info.technologies = [
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/material-ui-logo.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/aws.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/javascript-original.svg",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
+
+        ];
         info.description = "";
         info.gallery = [
 

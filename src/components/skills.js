@@ -80,7 +80,7 @@ export default class Skills extends Component {
   render () {
     return (
       <Element name="Skills">
-        <section name="Skills">
+        {/* <section name="Skills"> */}
           <Row className="skills" style={{backgroundColor: this._handleHexColor()}}>
             {/* This is where I will have Interests */}
             <Col lg={6} md={6} sm={12} xs={12} className="skills-description">
@@ -98,7 +98,7 @@ export default class Skills extends Component {
               </div>
             </Col>
           </Row>
-        </section>
+        {/* </section> */}
       </Element>
     );
   }

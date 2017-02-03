@@ -82,9 +82,10 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/ruby-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/logo.png"
         ];
-        info.description = "";
+        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         info.gallery = [
-
+          "link",
+          "https://my-contact-l.herokuapp.com/"
         ];
         break;
       case 'CodeMeeting':
@@ -100,9 +101,14 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg"
         ];
-        info.description = "";
+        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         info.gallery = [
-          
+          "true",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting1.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting2.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting3.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting4.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting5.png"
         ];
         break;
       case 'Personal-Website':
@@ -118,9 +124,10 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg"
         ];
-        info.description = "";
+        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         info.gallery = [
-
+          "false",
+          "You're already looking at the gallery! :-)"
         ];
         break;
       case 'ROOT-Education':
@@ -135,9 +142,10 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/sequelize-logo.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
         ];
-        info.description = "";
+        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         info.gallery = [
-
+          "false",
+          "Unfortunately, I do no have permission to post more pictures of the ROOT Education app. Sorry!"
         ];
         break;
       case 'MindsetLabs.io':
@@ -153,9 +161,14 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
         ];
-        info.description = "";
+        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         info.gallery = [
-
+          "true",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs1.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs2.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs3.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs4.png",
+          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs5.png"
         ];
         break;
       case 'PipsPass':
@@ -173,9 +186,10 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
 
         ];
-        info.description = "";
+        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         info.gallery = [
-
+          "false",
+          "Unfortunately, I do not have permission to post any more pictures regarding the PipsPass project :-(."
         ];
         break;
     }

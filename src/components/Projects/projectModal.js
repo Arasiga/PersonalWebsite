@@ -47,10 +47,38 @@ export default class ProjectModal extends Component {
         <h2>About {this.props.info.title} </h2>
         <hr style={{marginLeft: "0px"}} className="seperator" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          {this.props.info.description}
         </p>
       </div>
     )
+  }
+
+  _renderGalleryInfo = () => {
+    if (this.props.info.gallery[0] == "true") {
+      return (
+        <div>
+          {
+            this.props.info.gallery.map( (image, ind) => {
+              if (ind > 0) {
+                return (
+                  <Col lg={4} md={4} sm={6} xs={6} style={{marginBottom: "30px"}}>
+                    <img src={image} height="100%" width="100%" style={{top: "0px"}}/>
+                  </Col>
+                )
+              }
+            })
+          }
+        </div>
+      )
+    } else if (this.props.info.gallery[0] == "link") {
+      return (
+        <p> No need for a gallery here! Feel free to checkout the hosted version of this app <a target="_blank" href={this.props.info.gallery[1]}>here!</a></p>
+      )
+    } else if (this.props.info.gallery[0] == "false") {
+      return (
+        <p> { this.props.info.gallery[1] } </p>
+      )
+    }
   }
 
   _renderGallery = () => {
@@ -58,6 +86,9 @@ export default class ProjectModal extends Component {
       <div style={{padding: "10px", marginTop: "35px"}}>
         <h2> Gallery. </h2>
         <hr style={{marginLeft: "0px"}} className="seperator" />
+        <Row style={{marginLeft: "0px", marginRight: "0px"}}>
+          {this._renderGalleryInfo()}
+        </Row>
       </div>
     )
   }

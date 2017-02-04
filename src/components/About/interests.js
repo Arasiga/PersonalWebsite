@@ -113,7 +113,7 @@ export default class Interests extends Component {
         <Col
           className="interest"
           style={{backgroundColor: color[0]}}
-          lg={4} md={4} sm={12} xs={12}
+          lg={4} md={4} sm={4} xs={12}
           onClick={ () => {this._handleModal(); this._setInfo("Technology")} }
         >
           <h1 style={{color: "#ECECEC"}}> Technology. </h1>
@@ -121,7 +121,7 @@ export default class Interests extends Component {
         <Col
           className="interest"
           style={{backgroundColor: color[1]}}
-          lg={4} md={4} sm={12} xs={12}
+          lg={4} md={4} sm={4} xs={12}
           onClick={ () => {this._handleModal(); this._setInfo("Sports")} }
         >
           <h1 style={{color: "#ECECEC"}}> Sports. </h1>
@@ -129,7 +129,7 @@ export default class Interests extends Component {
         <Col
           className="interest"
           style={{backgroundColor: color[2]}}
-          lg={4} md={4} sm={12} xs={12}
+          lg={4} md={4} sm={4} xs={12}
           onClick={ () => {this._handleModal(); this._setInfo("Travelling")} }
         >
           <h1 style={{color: "#ECECEC"}}> Travelling. </h1>

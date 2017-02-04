@@ -205,58 +205,58 @@ export default class ProjectList extends Component {
     return (
       <div>
         <ProjectModal open={this.state.open} hide={this._handleModal} info={this.state.info}/>
-        <Row className="project-row">
+        {/* <Row className="project-row"> */}
           <Col
             className="project"
             style={{backgroundColor: colors[0]}}
-            lg={4} md={4} sm={12} xs={12}
+            lg={4} md={4} sm={6} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("Contact-List") }}
           >
-            <h2 style={{color: "#ECECEC"}}> Contact List. </h2>
+            <h1 style={{color: "#ECECEC"}}> Contact List. </h1>
           </Col>
           <Col
             className="project"
             style={{backgroundColor: colors[1]}}
-            lg={4} md={4} sm={12} xs={12}
+            lg={4} md={4} sm={6} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("CodeMeeting") }}
           >
-            <h2 style={{color: "#ECECEC"}}> CodeMeeting. </h2>
+            <h1 style={{color: "#ECECEC"}}> CodeMeeting. </h1>
           </Col>
           <Col
             className="project"
             style={{backgroundColor: colors[2]}}
-            lg={4} md={4} sm={12} xs={12}
+            lg={4} md={4} sm={6} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("Personal-Website") }}
           >
-            <h2 style={{color: "#ECECEC"}}> Personal Website. </h2>
+            <h1 style={{color: "#ECECEC"}}> Personal Website. </h1>
           </Col>
-        </Row>
-        <Row className="project-row">
+        {/* </Row> */}
+        {/* <Row className="project-row"> */}
           <Col
             className="project"
             style={{backgroundColor: colors[3]}}
-            lg={4} md={4} sm={12} xs={12}
+            lg={4} md={4} sm={6} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("ROOT-Education") }}
           >
-            <h2 style={{color: "#ECECEC"}}> ROOT Education. </h2>
+            <h1 style={{color: "#ECECEC"}}> ROOT Education. </h1>
           </Col>
           <Col
             className="project"
             style={{backgroundColor: colors[4]}}
-            lg={4} md={4} sm={12} xs={12}
+            lg={4} md={4} sm={6} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("MindsetLabs.io") }}
           >
-            <h2 style={{color: "#ECECEC"}}> MindsetLabs.io </h2>
+            <h1 style={{color: "#ECECEC"}}> MindsetLabs.io </h1>
           </Col>
           <Col
             className="project"
             style={{backgroundColor: colors[5]}}
-            lg={4} md={4} sm={12} xs={12}
+            lg={4} md={4} sm={6} xs={12}
             onClick={ () => { this._handleModal(); this._setProject("PipsPass") }}
           >
-            <h2 style={{color: "#ECECEC"}}> PipsPass. </h2>
+            <h1 style={{color: "#ECECEC"}}> PipsPass. </h1>
           </Col>
-        </Row>
+        {/* // </Row> */}
       </div>
     );
   }

@@ -11,6 +11,22 @@ import Scroll from 'react-scroll';
 const Element = Scroll.Element;
 const scroller = Scroll.scroller;
 
+
+const styles = {
+  // errorStyle: {
+  //   color: "white",
+  // },
+  underlineStyle: {
+    borderColor: "white",
+  },
+  floatingLabelStyle: {
+    color: "white",
+  },
+  floatingLabelFocusStyle: {
+    color: "white",
+  },
+};
+
 class Contact extends Component {
 
   constructor(props) {
@@ -59,7 +75,7 @@ class Contact extends Component {
     const {handleSubmit, fields: {name, email, message}} = this.props;
 
     return (
-      <section className='contact-div'style={{backgroundColor: this._handleHexColor()}}>
+      <Col lg={12} md={12} sm={12} xs={12} className='contact-div' style={{color: "white", backgroundColor: this._handleHexColor()}}>
         <Snackbar
           open={this.state.open}
           message="Email Sent!"
@@ -72,35 +88,44 @@ class Contact extends Component {
 
             </Col>
             <Col lg={7} md={7} sm={12}> */}
-              <h3> Contact Me! </h3>
+              <h1 > Contact Me! </h1>
               <a href='https://github.com/Arasiga' target="_blank">
-                <img style={{margin: '10px', cursor: 'pointer'}} src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/github-logo.svg" height='20px' width='20px' />
+                <img style={{margin: '10px', cursor: 'pointer'}} src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/github-logo.svg" height='37px' width='37px' />
               </a>
               <a href='https://ca.linkedin.com/in/alex-rasiga-b3b599119' target="_blank">
-                <img style={{cursor: 'pointer'}} src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/linkedin-logo.svg" height='20px' width='20px' />
+                <img style={{cursor: 'pointer'}} src="http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/linkedin-logo.svg" height='37px' width='37px' />
               </a>
-              <p> This information will be sent to my email  </p>
+              <p style={{fontSize: "19px"}}> This information will be sent to my email  </p>
               <form onSubmit={handleSubmit(this._handleFormSubmit.bind(this))}>
                 <TextField
                   {...name}
-                  style={{width: '500px'}}
+                  style={{width: '100%'}}
                   hintText="Optional, but it's nice to know who you are :)"
                   floatingLabelText="Your Name"
+                  underlineFocusStyle={styles.underlineStyle}
+                  floatingLabelStyle={styles.floatingLabelStyle}
+                  floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
                 /><br />
                 <TextField
                   {...email}
-                  style={{width: '500px'}}
+                  style={{width: '100%'}}
                   hintText="Only needed if you would like me to reply!"
                   floatingLabelText="Your Email"
+                  underlineFocusStyle={styles.underlineStyle}
+                  floatingLabelStyle={styles.floatingLabelStyle}
+                  floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
                 /><br />
                 <TextField
                   {...message}
                   errorText={ message.touched && message.error }
-                  style={{width: '500px'}}
+                  style={{width: '100%'}}
                   hintText="Be Nice :-)"
                   multiLine={true}
                   rows={1}
                   floatingLabelText="Message"
+                  underlineFocusStyle={styles.underlineStyle}
+                  floatingLabelStyle={styles.floatingLabelStyle}
+                  floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
                 /><br />
                 <RaisedButton
                   secondary
@@ -111,7 +136,7 @@ class Contact extends Component {
             {/* </Col>
           </Row> */}
         </Element>
-      </section>
+      </Col>
     );
   }
 }

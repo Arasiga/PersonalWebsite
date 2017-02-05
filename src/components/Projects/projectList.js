@@ -82,7 +82,7 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/ruby-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/logo.png"
         ];
-        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        info.description = "This simple contact list web app was one of my first projects that were of 'larger' scale. By 'larger' scale I mean having a website hosted with a full backend interactions and client side rendering of the data served by the server. I was still very new to web development at this stage and so the UI/UX isn't the best but keep in mind this was my very first attempt at a full blown web app. In this app, users are able to create an account, sign in and add, update and edit their contact list. Nothing too serious but nonetheless I was very happy to get an app like this released after only two~three weeks of learning web development. ";
         info.gallery = [
           "link",
           "https://my-contact-l.herokuapp.com/"
@@ -101,7 +101,7 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg"
         ];
-        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        info.description = "This project was much larger than the contact list web app. We were a team of three and I was in charge of some of user interface as well as the website's live interactions. Code Meeting is a web app that facilitates remote pair programming allowing users to join a room and take advantage of video chat, live programming and a live white board. We have a built in text editor with text highlighting depending on which language you choose between C++, Javascript and Ruby. We also have the ability to compile code with serverside scripts. I used technologies such as webRTC and socket.io for the app's live interactions and used React in conjunction for CSS / Boostrap for the ui. Here are some pictures of the project :";
         info.gallery = [
           "true",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting1.png",
@@ -124,7 +124,7 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg"
         ];
-        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        info.description = "You're looking right at this project :)! I decided to have a resource that tells more about myself other than social media. I thought I would have some more information about myself on here so people can learn more about me. I also wanted to practice my web development skills further and try new things such as AWS and Adobe Illustrator which I used to host this website and design the vector graphics you see at the top of this page and my icon! I built this website from the ground up and I am very excited to be able to deliver this content for you guys :D.";
         info.gallery = [
           "false",
           "You're already looking at the gallery! :-)"
@@ -142,7 +142,7 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/sequelize-logo.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
         ];
-        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        info.description = "ROOT education was a project that my instructor at Lighthouse Labs wanted build and I helped him with some components and UI/UX. This was the first project that I worked on where I was getting paid. In other words, it is my first job in the industry. While working on ROOT Education I was able to learn a lot of good practices when it comes to team collaboration such as properly using git source control in conjunction with a TRELLO board. I learnt a lot about project organization and AGILE development methodology.";
         info.gallery = [
           "false",
           "Unfortunately, I do no have permission to post more pictures of the ROOT Education app. Sorry!"
@@ -161,7 +161,7 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
         ];
-        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        info.description = "Mindset Labs was a group of developers that included my instructor at Lighthouse Labs and the iOS instructor at Lighthouse Labs. We all got together and collected some freelance work and we wanted to created a team page. I was in charge of creating most of the components for this website such as nav bars, a bot that would interact with users, cards, etc. Unfortunately we didn't get the chance to host this website as we all went on our separate ways after the freelance work was done. Nonetheless, it was a pleasure working with them. Here are some pictures of the website:";
         info.gallery = [
           "true",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs1.png",
@@ -186,7 +186,7 @@ export default class ProjectList extends Component {
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
 
         ];
-        info.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        info.description = "Pipspass was one of the freelance projects we got as part of the initial group at Mindset Labs. Pipspass is a iOS, Web and Android app that unites children around Toronto by offering exciting classes and activities. Users are able to filter through all kinds of activities and sign their children up for their favourites. I was in charge or the UI/UX and responsible for creating the majority of components found on the website. This was the largest project I've worked on as it lasted over 3 months time to release an MVP.";
         info.gallery = [
           "false",
           "Unfortunately, I do not have permission to post any more pictures regarding the PipsPass project :-(."

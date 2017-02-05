@@ -79,8 +79,14 @@ export default class Skills extends Component {
               <div style={{width: "80%", color: "white"}}>
                 <h1> Skills. </h1>
                 <br />
-                <p style={{fontSize: "19px"}}>
-                  Here is a list of skills I've developed in the past year. The list is ordered such that from left to right, top to bottom are skills in order of knowledge/exposure. However, most of these I have been exposed to almost all equally except for Javascript/React.JS which I worked with the most. If you're interested in knowing where and how I learnt these skills: I started off (every single one) by learning the basics of each of online using websites like udemy, codeacademy, youtube, etc. Beyond that, I learnt Javscript more in depth during my time at the Lighthouse Labs bootcamp through several projects using technologies like Node.JS and React. Furthermore, I learnt Java and C++ while studying at University of Waterloo where my first programming class covered C++ and my second programming class went over Java and Android programming. As far as front-end/design skills such as HTML/CSS and Adobe Illustrator I learnt mostly on my own and applying them extensively across a multitude of projects I've worked on. Below there is a list of projects that I have worked on within the past year that highlight these skills and others.
+                <p style={{fontSize: "19px", lineHeight: "1.6em"}}>
+                  Here is a list of skills I've developed over the past year.
+                  I am very comfortable using every skill listed, however; I have the most experience/exposure to Javascript/React and HTML/CSS.
+                  To learn these abilities, I started off with learning the basics of each one by following online guides, videos, and tutorials using websites like codecademy, Udemy, YouTube, etc.
+                  Beyond that, I attended a 8 week web development bootcamp at Lighthouse Labs in Toronto which allowed me to strengthen my knowledge and understanding of programming as a whole with emphasis on languages like Ruby and Javascript.
+                  Furthermore, I was able to learn C++ and Java/Android in my first year programming courses in university.
+                  As far as front end design and UI/UX goes, I was able to learn these skills while working over a multitude of projects whether it be personal projects or working in the industry.
+                  Below you will find a list of projects that I've worked on that include all these skills and more!
                 </p>
               </div>
             </Col>

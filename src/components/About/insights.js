@@ -42,8 +42,9 @@ export default class Insights extends Component {
               Hello! Welcome to my personal website!
               Here you may find pertinent information about me such as skills and projects.
               As a general introduction, I am a student-athlete at the University of Waterloo studying Computer Engineering while being a member of the Men's Varsity Soccer Team.
-              Additionally, I am very passionate about computer software, notably web techonologies, as I'm sure you're about to find out!
-              Furthermore, you may also get in touch with me at the bottom of this page if you wish to discuss with me and/or have any questions!
+              I am very passionate about computer software, notably web techonologies, as I'm sure you're about to find out!
+              If you want to check out my resume, <a style={{"text-decoration": "none"}} target="_blank" href="https://s3.amazonaws.com/alexrasiga.ca.images/resume.pdf"> here it is. </a>
+              You may also get in touch with me at the bottom of this page if you wish to discuss with me and/or have any questions!
               Until then, let's get you started with some of my interests that you can find below!
               <br />
               Thank you for coming and I hope you enjoy your stay! :-)

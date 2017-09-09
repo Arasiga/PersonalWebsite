@@ -28,7 +28,6 @@ export default class InterestsModal extends Component {
   }
 
   _renderText = () => {
-    console.log(this.props.info);
     return (
       <div className="modal-text" dangerouslySetInnerHTML={{__html: this.props.info.text}}>
         {/* {this.props.info.text} */}

@@ -72,7 +72,7 @@ export default class ProjectList extends Component {
     switch(type){
       case 'Contact-List':
         info.title = "Contact List.";
-        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/Contact.png";
+        info.image = "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/contact.jpg";
         info.technologies = [
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
@@ -90,7 +90,7 @@ export default class ProjectList extends Component {
         break;
       case 'CodeMeeting':
         info.title = "CodeMeeting.";
-        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/CodeMeeting.png";
+        info.image = "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/codemeeting.jpg";
         info.technologies = [
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
@@ -104,16 +104,16 @@ export default class ProjectList extends Component {
         info.description = "This project was much larger than the contact list web app. We were a team of three and I was in charge of some of user interface as well as the website's live interactions. Code Meeting is a web app that facilitates remote pair programming allowing users to join a room and take advantage of video chat, live programming and a live white board. We have a built in text editor with text highlighting depending on which language you choose between C++, Javascript and Ruby. We also have the ability to compile code with serverside scripts. I used technologies such as webRTC and socket.io for the app's live interactions and used React in conjunction for CSS / Boostrap for the ui. Here are some pictures of the project :";
         info.gallery = [
           "true",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting1.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting2.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting3.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting4.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/codeMeeting5.png"
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/codemeeting1.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/codemeeting2.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/codemeeting3.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/codemeeting4.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/codemeeting5.jpg"
         ];
         break;
       case 'Personal-Website':
         info.title = "Personal Website.";
-        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/personalWebsite.png";
+        info.image = "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/personalwebsite.jpg";
         info.technologies = [
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/javascript-original.svg",
@@ -132,7 +132,7 @@ export default class ProjectList extends Component {
         break;
       case 'ROOT-Education':
         info.title = "ROOT-Education.";
-        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/ROOT.png";
+        info.image = "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/root.jpg";
         info.technologies = [
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3-original.svg",
@@ -150,7 +150,7 @@ export default class ProjectList extends Component {
         break;
       case 'MindsetLabs.io':
         info.title = "MindsetLabs.io.";
-        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindset.png";
+        info.image = "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/mindset.jpg";
         info.technologies = [
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap-plain-wordmark.svg",
@@ -164,16 +164,16 @@ export default class ProjectList extends Component {
         info.description = "Mindset Labs was a group of developers that included my instructor at Lighthouse Labs and the iOS instructor at Lighthouse Labs. We all got together and collected some freelance work and we wanted to created a team page. I was in charge of creating most of the components for this website such as nav bars, a bot that would interact with users, cards, etc. Unfortunately we didn't get the chance to host this website as we all went on our separate ways after the freelance work was done. Nonetheless, it was a pleasure working with them. Here are some pictures of the website:";
         info.gallery = [
           "true",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs1.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs2.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs3.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs4.png",
-          "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/mindsetLabs5.png"
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/mindsetlabs1.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/mindsetlabs2.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/mindsetlabs3.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/mindsetlabs4.jpg",
+          "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/mindsetlabs5.jpg"
         ];
         break;
       case 'PipsPass':
         info.title = "PipsPass.";
-        info.image = "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/projectScreenshots/pipspass.png";
+        info.image = "https://s3.amazonaws.com/alexrasiga.ca.images/screenshots/pipspass.jpg";
         info.technologies = [
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
           "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/material-ui-logo.svg",

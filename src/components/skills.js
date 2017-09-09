@@ -12,23 +12,22 @@ const skills = [
   // [
     "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/javascript-original.svg",
     "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/react-original.svg",
-    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
+    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/docker.svg",
   // ],
   // [
     "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/html5-original.svg",
-    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3.svg",
-    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/bootstrap.svg",
+    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
+    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/aws.svg",
   // ],
   // [
+    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/css3.svg",
     "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/cpp.svg",
-    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/java-original-wordmark.svg",
-    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/git-original.svg",
+    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/nodejs-original-wordmark.svg",
   // ],
   // [
     "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/ruby-original.svg",
     "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/rails-original-wordmark.svg",
-    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/illustrator-plain.svg",
-  // ]
+    "http://alexrasiga.ca.images.s3-website-us-east-1.amazonaws.com/progIcons/java-original-wordmark.svg"
 ]
 
 export default class Skills extends Component {
@@ -80,12 +79,10 @@ export default class Skills extends Component {
                 <h1> Skills. </h1>
                 <br />
                 <p style={{fontSize: "19px", lineHeight: "1.6em"}}>
-                  Here is a list of skills I've developed over the past year.
-                  I am very comfortable using every skill listed, however; I have the most experience/exposure to Javascript/React and HTML/CSS.
-                  To learn these abilities, I started off with learning the basics of each one by following online guides, videos, and tutorials using websites like codecademy, Udemy, YouTube, etc.
-                  Beyond that, I attended a 8 week web development bootcamp at Lighthouse Labs in Toronto which allowed me to strengthen my knowledge and understanding of programming as a whole with emphasis on languages like Ruby and Javascript.
-                  Furthermore, I was able to learn C++ and Java/Android in my first year programming courses in university.
-                  As far as front end design and UI/UX goes, I was able to learn these skills while working over a multitude of projects whether it be personal projects or working in the industry.
+                  Here is a list of skills I've developed over the past few years.
+                  I am comfortable using every skill listed, however; my knowledge of the skills listed increases from bottom to top.
+                  I was able to learn these skills in various fashions including online tutorials, hands-on experience during coop terms, and attending an 8 week Web Development Bootcamp at Lighthouse Labs.
+                  I strive to broaden my knowledge and understand of software development everyday and constantly looking for new opportunities to challenge myself.
                   Below you will find a list of projects that I've worked on that include all these skills and more!
                 </p>
               </div>

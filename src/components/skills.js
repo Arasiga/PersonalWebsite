@@ -54,11 +54,11 @@ export default class Skills extends Component {
 
   _renderIcons = () => {
     return (
-      <div style={{height: "100%"}}>
+      <div>
         {
           skills.map( (item, index) => {
             return (
-              <Col lg="4" md="6" sm="4" xs="4" className="icon-container">
+              <Col lg="4" md="6" sm="4" xs="6" className="icon-container">
                 <img src={item} />
               </Col>
             )
@@ -88,7 +88,7 @@ export default class Skills extends Component {
               </div>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12} className="skills-showcase">
-              <div style={{width: "80%", padding: "30px", height: "100%"}}>
+              <div style={{width: "80%", padding: "30px"}}>
                 {this._renderIcons()}
               </div>
             </Col>

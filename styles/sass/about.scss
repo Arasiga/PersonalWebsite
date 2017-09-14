@@ -163,7 +163,7 @@
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
-
+  // height: 100vh;
   // display: flex;
   // display: -webkit-box;
   // display: -moz-box;
@@ -198,7 +198,6 @@
 .skills-showcase {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

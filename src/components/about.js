@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import about from '../../styles/sass/about.scss';
 import { Col, Row } from 'react-bootstrap';
-import AboutCardContainer from './cards/aboutCard';
-import InterestsCardContainer from './cards/interestsCard';
-import SkillsCardContainer from './cards/skillsCard';
-
 // Components
 import Insights from './About/insights';
 import Interests from './About/interests';

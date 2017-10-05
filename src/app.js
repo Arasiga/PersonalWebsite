@@ -63,17 +63,6 @@ class App extends Component {
       <MuiThemeProvider muiTheme={getMuiTheme()}>
         <div style={{overflowX: "hidden"}}>
           <MainAppBar />
-          {/* <div>
-            <div onClick={ () => { this._handleColorChange("red"); }}>
-              red
-            </div>
-            <div onClick={ () => { this._handleColorChange("green"); }}>
-              green
-            </div>
-            <div onClick={ () => { this._handleColorChange("blue"); }}>
-              blue
-            </div>
-          </div> */}
           <IconMenu
             iconButtonElement={<IconButton style={{margin: "5px"}}><ColorLens color={"white"}/></IconButton>}
             anchorOrigin={{horizontal: 'left', vertical: 'top'}}

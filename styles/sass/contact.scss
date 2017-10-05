@@ -1,22 +1,12 @@
 .contact-div{
   height: 100vh;
-  // padding: 10% 10% 25% 10%;
-
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-// .form {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }

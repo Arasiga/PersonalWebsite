@@ -1,29 +1,14 @@
 .insights {
-  // height: 100vh;
   padding: 10% 10% 10% 10%;
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
-
-  // display: flex;
-  // display: -webkit-box;
-  // display: -moz-box;
-  // display: -ms-flexbox;
-  // display: -webkit-flex;
-  // display: flex;
-  // flex-wrap: wrap;
   overflow: hidden;
 }
 
 .insights > div[class*='col-'] {
-  // display: -webkit-box;
-  // display: -moz-box;
-  // display: -ms-flexbox;
-  // display: -webkit-flex;
-  // display: flex;
-  // flex-direction: column;
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
@@ -85,7 +70,6 @@
   top: 0px;
   right: 0px;
   left: 0px;
-  // z-index: 10;
 }
 
 .modal-info-card {
@@ -106,8 +90,6 @@
 .interests {
   margin-left: 0px;
   margin-right: 0px;
-  // height: 50vh;
-
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
@@ -116,14 +98,12 @@
 }
 
 .interest {
-  // height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10% 10% 10% 10%;
 
-  // box-shadow: 0 14px 45px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 
@@ -163,25 +143,10 @@
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
-  // height: 100vh;
-  // display: flex;
-  // display: -webkit-box;
-  // display: -moz-box;
-  // display: -ms-flexbox;
-  // display: -webkit-flex;
-  // display: flex;
-  // flex-wrap: wrap;
   overflow: hidden;
 }
 
 .skills > div[class*='col-'] {
-  // display: flex;
-  // display: -webkit-box;
-  // display: -moz-box;
-  // display: -ms-flexbox;
-  // display: -webkit-flex;
-  // display: flex;
-  // flex-direction: column;
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }

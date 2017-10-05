@@ -1,36 +1,19 @@
 
 .main {
   height: 100vh;
-  // background: url(/images/test.svg) no-repeat center center;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // background-size: cover;
-
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
-
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  // display: flex;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-}
-
-.content {
-
-}
-
-.theme {
-
 }
 
 .svg-image{

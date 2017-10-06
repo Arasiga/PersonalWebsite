@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {calcWidth} from './calcWidth';
 
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import promise from 'redux-promise';
-
-import reducers from './reducers';
-
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton';
@@ -25,10 +19,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();
-
-const createStoreWithMiddleware = applyMiddleware(
-  promise
-)(createStore);
 
 class App extends Component {
 
@@ -86,7 +76,5 @@ class App extends Component {
 };
 
 ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
+  <App />
   , document.getElementById('app'));

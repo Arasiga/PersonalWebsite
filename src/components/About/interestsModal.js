@@ -41,7 +41,7 @@ export default class InterestsModal extends Component {
         {
           this.props.info.gallery.map( (img, index) => {
             return (
-              <Col lg={4} md={4} sm={6} xs={6} style={{marginBottom: "20px"}}>
+              <Col key={index} lg={4} md={4} sm={6} xs={6} style={{marginBottom: "20px"}}>
                 <img src={img} height="100%" width="100%" style={{top: "0px"}}/>
               </Col>
             )
@@ -52,6 +52,7 @@ export default class InterestsModal extends Component {
   }
 
   render(){
+    console.log(this.props.open)
     return (
       <Modal
         show={this.props.open}

@@ -28,9 +28,9 @@ export default class ProjectModal extends Component {
         <hr style={{marginLeft: "0px"}} className="seperator" />
         <Row>
           {
-            this.props.info.technologies.map( (item, ind) => {
+            this.props.info.technologies.map( (item, index) => {
               return (
-                <Col lg={1} md={1} sm={1} xs={1} >
+                <Col key={index} lg={1} md={1} sm={1} xs={1} >
                   <img src={item} style={{minHeight: "30px", minWidth: "30px"}} height="100%" width="100%" />
                 </Col>
               )
@@ -58,10 +58,10 @@ export default class ProjectModal extends Component {
       return (
         <div>
           {
-            this.props.info.gallery.map( (image, ind) => {
-              if (ind > 0) {
+            this.props.info.gallery.map( (image, index) => {
+              if (index > 0) {
                 return (
-                  <Col lg={4} md={4} sm={6} xs={6} style={{marginBottom: "30px"}}>
+                  <Col key={index} lg={4} md={4} sm={6} xs={6} style={{marginBottom: "30px"}}>
                     <img src={image} height="100%" width="100%" style={{top: "0px"}}/>
                   </Col>
                 )

@@ -203,7 +203,7 @@ export default class ProjectList extends Component {
     let colors = this._handleHexColor();
 
     return (
-      <div>
+      <Row>
         <ProjectModal open={this.state.open} hide={this._handleModal} info={this.state.info}/>
         {/* <Row className="project-row"> */}
           <Col
@@ -257,7 +257,7 @@ export default class ProjectList extends Component {
             <h1 style={{color: "#ECECEC"}}> PipsPass. </h1>
           </Col>
         {/* // </Row> */}
-      </div>
+      </Row>
     );
   }
 }
